@@ -102,3 +102,18 @@ The testbench includes these verification scenarios:
 - Data Integrity: Verifies that written data matches read data for valid transactions
 - Error Handling: Confirms proper error responses for invalid operations
 - Burst Support: Validates all supported burst types (FIXED, INCR, WRAP)
+
+#### Reset sequence verification
+<img width="1845" height="792" alt="reset_state" src="https://github.com/user-attachments/assets/a02873eb-5592-4989-a21f-1f2921f40255" />
+
+#### Fixed burst mode verification
+<img width="1845" height="792" alt="fixed_burst" src="https://github.com/user-attachments/assets/51701305-2bec-4a7f-98c9-3d7d0d81ee53" />
+
+#### Incremental burst mode verification
+<img width="1835" height="790" alt="incr_burst" src="https://github.com/user-attachments/assets/889b0282-07e0-4095-91b8-903d0fdcde6f" />
+
+#### Wrap burst mode verification
+<img width="1835" height="790" alt="wrap_burst" src="https://github.com/user-attachments/assets/69d18f48-3139-4621-a4a3-62f27e072cfe" />
+
+#### Error handlind verification
+<img width="1851" height="789" alt="error_hanlding" src="https://github.com/user-attachments/assets/4f0b7f31-a173-456a-b9bc-a4bfa1d209ac" />
