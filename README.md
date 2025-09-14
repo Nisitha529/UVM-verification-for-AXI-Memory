@@ -115,5 +115,7 @@ The testbench includes these verification scenarios:
 #### Wrap burst mode verification
 <img width="1835" height="790" alt="wrap_burst" src="https://github.com/user-attachments/assets/69d18f48-3139-4621-a4a3-62f27e072cfe" />
 
-#### Error handlind verification
+#### Error handling verification
 <img width="1851" height="789" alt="error_hanlding" src="https://github.com/user-attachments/assets/4f0b7f31-a173-456a-b9bc-a4bfa1d209ac" />
+
+The testbench was modified to run in error handling mode, where invalid AXI transactions are generated to verify the slave’s error response handling. During simulation, the driver issued both read and write operations with unsupported parameters, and the DUT correctly returned DECERR (0b11) responses for both. The results confirm that the AXI4 slave’s error detection and response mechanism function as intended.
