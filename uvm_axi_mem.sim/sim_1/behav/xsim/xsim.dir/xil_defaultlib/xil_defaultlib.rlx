@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/media/nisitha/My_Passport/MOODLE/UVM_course_projects/uvm_axi_mem/uvm_axi_mem.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,uvm,,,,,,
+/media/nisitha/My_Passport/MOODLE/UVM_course_projects/uvm_axi_mem/uvm_axi_mem.srcs/sim_1/new/tb.sv,1757839714,systemVerilog,,,/tools/Xilinx/Vivado/2023.2/data/xsim/system_verilog/uvm_include/uvm_macros.svh,tb,,uvm,,,,,,
+/media/nisitha/My_Passport/MOODLE/UVM_course_projects/uvm_axi_mem/uvm_axi_mem.srcs/sources_1/new/axi_slave.sv,1757839588,systemVerilog,/media/nisitha/My_Passport/MOODLE/UVM_course_projects/uvm_axi_mem/uvm_axi_mem.srcs/sim_1/new/tb.sv,/media/nisitha/My_Passport/MOODLE/UVM_course_projects/uvm_axi_mem/uvm_axi_mem.srcs/sim_1/new/tb.sv,,$unit_axi_slave_sv_4036229113;axi_slave,,uvm,,,,,,
+/tools/Xilinx/Vivado/2023.2/data/xsim/system_verilog/uvm_include/uvm_macros.svh,1697210495,verilog,,,,,,,,,,,,

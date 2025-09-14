@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_axi_slave_sv_4036229113 " />
+            <top_module name="glbl" />
+            <top_module name="std" />
+            <top_module name="tb" />
+            <top_module name="uvm_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="625.001 ns"></ZoomEndTime>
+      <Cursor1Time time="625.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="logic" fp_name="/tb/dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group10">
+      <obj_property name="label">axi_wr_addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/dut/awvalid">
+         <obj_property name="ElementShortName">awvalid</obj_property>
+         <obj_property name="ObjectShortName">awvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/awready">
+         <obj_property name="ElementShortName">awready</obj_property>
+         <obj_property name="ObjectShortName">awready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/awid">
+         <obj_property name="ElementShortName">awid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">awid[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/awlen">
+         <obj_property name="ElementShortName">awlen[3:0]</obj_property>
+         <obj_property name="ObjectShortName">awlen[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/awsize">
+         <obj_property name="ElementShortName">awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/awaddr">
+         <obj_property name="ElementShortName">awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/awburst">
+         <obj_property name="ElementShortName">awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">awburst[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group17">
+      <obj_property name="label">axi_wr_data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/dut/wvalid">
+         <obj_property name="ElementShortName">wvalid</obj_property>
+         <obj_property name="ObjectShortName">wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/wready">
+         <obj_property name="ElementShortName">wready</obj_property>
+         <obj_property name="ObjectShortName">wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wid">
+         <obj_property name="ElementShortName">wid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wid[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wdata">
+         <obj_property name="ElementShortName">wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wstrb">
+         <obj_property name="ElementShortName">wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/wlast">
+         <obj_property name="ElementShortName">wlast</obj_property>
+         <obj_property name="ObjectShortName">wlast</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group22">
+      <obj_property name="label">axi_wr_resp</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/dut/bready">
+         <obj_property name="ElementShortName">bready</obj_property>
+         <obj_property name="ObjectShortName">bready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/bvalid">
+         <obj_property name="ElementShortName">bvalid</obj_property>
+         <obj_property name="ObjectShortName">bvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/bid">
+         <obj_property name="ElementShortName">bid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bid[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/bresp">
+         <obj_property name="ElementShortName">bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">bresp[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group30">
+      <obj_property name="label">axi_rd_addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/dut/arready">
+         <obj_property name="ElementShortName">arready</obj_property>
+         <obj_property name="ObjectShortName">arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/arid">
+         <obj_property name="ElementShortName">arid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">arid[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/araddr">
+         <obj_property name="ElementShortName">araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/arlen">
+         <obj_property name="ElementShortName">arlen[3:0]</obj_property>
+         <obj_property name="ObjectShortName">arlen[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/arsize">
+         <obj_property name="ElementShortName">arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/arburst">
+         <obj_property name="ElementShortName">arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/arvalid">
+         <obj_property name="ElementShortName">arvalid</obj_property>
+         <obj_property name="ObjectShortName">arvalid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group37">
+      <obj_property name="label">axi_rd_data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb/dut/rid">
+         <obj_property name="ElementShortName">rid[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rid[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/rdata">
+         <obj_property name="ElementShortName">rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/rresp">
+         <obj_property name="ElementShortName">rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/rlast">
+         <obj_property name="ElementShortName">rlast</obj_property>
+         <obj_property name="ObjectShortName">rlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/rvalid">
+         <obj_property name="ElementShortName">rvalid</obj_property>
+         <obj_property name="ObjectShortName">rvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/dut/rready">
+         <obj_property name="ElementShortName">rready</obj_property>
+         <obj_property name="ObjectShortName">rready</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
