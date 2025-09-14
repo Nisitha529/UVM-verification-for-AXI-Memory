@@ -50,7 +50,7 @@ This module implements an AXI4-compliant slave interface capable of handling bot
 - rresp: Read response status
 - rlast: Last transfer in burst
 
-#### Functional Description
+### Functional Description
 - The design uses five independent finite state machines (FSMs), one per AXI channel:
 - Write Address FSM: Manages write address transactions
 - Write Data FSM: Accepts and stores burst write data
@@ -58,20 +58,47 @@ This module implements an AXI4-compliant slave interface capable of handling bot
 - Read Address FSM: Handles read address requests
 - Read Data FSM: Streams out read data with burst handling
 
-#### Burst Support
+### Burst Support
 - All AXI4 burst types are supported:
 - FIXED: Repeated transfers to the same address
 - INCR: Sequential addresses for each transfer
 - WRAP: Address wraps around at a defined boundary
 
-#### Internal Memory
+### Internal Memory
 - The module includes a 128-byte internal memory block. It is byte-addressable, supports selective writes via wstrb, and aligns read data according to the access size.
 
-#### Error Handling
+### Error Handling
 The slave returns AXI-compliant response codes:
 
 - OKAY (0b00): Successful access
 - SLVERR (0b10): Slave-side error (e.g., unsupported size)
 - DECERR (0b11): Decode error (e.g., invalid address)
 
+## AXI4 Slave UVM Testbench
+### Overview
+This repository contains a UVM-based testbench for verifying an AXI slave module. The testbench implements a complete verification environment with various test sequences to validate the functionality of an AXI slave device.
 
+### Testbench structure
+The testbench follows standard UVM architecture with the following components:
+- Transaction: UVM sequence item containing all AXI signals and constraints
+- Sequences: Multiple test scenarios for different AXI operations
+- Driver: Translates transactions to AXI protocol signals
+- Monitor: Observes DUT behavior and checks for correctness
+- Agent: Contains driver, monitor, and sequencer
+- Environment: Top-level container for all testbench components
+- Test: Configures the environment and executes test sequences
+
+### Test Sequences
+The testbench includes these verification scenarios:
+- Reset Sequence: Initializes the DUT and verifies reset behavior
+- Fixed Burst Mode: Tests FIXED burst type transactions
+- Incremental Burst Mode: Tests INCR burst type transactions
+- Wrapping Burst Mode: Tests WRAP burst type transactions
+- Error Condition Tests: Verifies error responses for invalid addresses
+
+### Verification Approach
+- The testbench uses a comprehensive approach to verify the AXI slave:
+- Protocol Compliance: Checks that all AXI signals follow protocol timing requirements
+- Data Integrity: Verifies that written data matches read data for valid transactions
+- Error Handling: Confirms proper error responses for invalid operations
+- Burst Support: Validates all supported burst types (FIXED, INCR, WRAP)
