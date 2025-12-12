@@ -10,3 +10,6 @@
   CREATE_STREAM @0 {NAME:errwrrdfix T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:606}
   CREATE_STREAM @0 {NAME:vwrrdfx T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:606}
   CREATE_STREAM @0 {NAME:vwrrdfx T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:606}
+  CREATE_STREAM @0 {NAME:errwrrdfix T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:604}
+  CREATE_STREAM @0 {NAME:errwrrdfix T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:604}
+  CREATE_STREAM @0 {NAME:vwrrdwrap T:Transactions SCOPE:uvm_test_top.env.a.seqr STREAM:604}
