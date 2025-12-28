@@ -12,9 +12,8 @@ agent a;
  
  
 virtual function void build_phase(uvm_phase phase);
-super.build_phase(phase);
-  a = agent::type_id::create("a",this);
- 
+ super.build_phase(phase);
+ a = agent::type_id::create("a",this);
 endfunction
  
 endclass
