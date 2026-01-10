@@ -1,29 +1,26 @@
 `include "uvm_macros.svh"
- import uvm_pkg::*;
+import uvm_pkg::*;
 
 class driver extends uvm_driver #(transaction);
   `uvm_component_utils(driver)
   
   virtual axi_if vif;
   transaction tr;
-  
-  
+
   function new(input string path = "drv", uvm_component parent = null);
     super.new(path,parent);
   endfunction
   
- virtual function void build_phase(uvm_phase phase);
+  virtual function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-     tr = transaction::type_id::create("tr");
+    tr = transaction::type_id::create("tr");
       
-   if(!uvm_config_db#(virtual axi_if)::get(this,"","vif",vif)) 
-      `uvm_error("drv","Unable to access Interface");
+     if(!uvm_config_db#(virtual axi_if)::get(this,"","vif",vif)) 
+       `uvm_error("drv","Unable to access Interface");
+       
   endfunction
-  
-  
-  
-  task reset_dut(); 
-    begin
+
+  task reset_dut(); begin
     `uvm_info("DRV", "System Reset : Start of Simulation", UVM_MEDIUM);
     vif.resetn      <= 1'b0;  ///active high reset
     vif.awvalid     <= 1'b0;
@@ -33,24 +30,25 @@ class driver extends uvm_driver #(transaction);
     vif.awaddr      <= 0;
     vif.awburst     <= 0;
       
-    vif.wvalid      <= 0;
-    vif.wid         <= 0;
-    vif.wdata       <= 0;
-    vif.wstrb       <= 0;
-    vif.wlast       <= 0;
+    vif.wvalid  <= 0;
+    vif.wid     <= 0;
+    vif.wdata   <= 0;
+    vif.wstrb   <= 0;
+    vif.wlast   <= 0;
       
-    vif.bready      <= 0;
+    vif.bready  <= 0;
     
-    vif.arvalid     <= 1'b0;
-    vif.arid        <= 1'b0;
-    vif.arlen       <= 0;
-    vif.arsize      <= 0;
-    vif.araddr      <= 0;
-    vif.arburst     <= 0; 
+    vif.arvalid <= 1'b0;
+    vif.arid    <= 1'b0;
+    vif.arlen   <= 0;
+    vif.arsize  <= 0;
+    vif.araddr  <= 0;
+    vif.arburst <= 0; 
       
-    vif.rready      <= 0;
-     @(posedge vif.clk);
-      end
+    vif.rready   <= 0;
+    
+    @(posedge vif.clk);
+    end
   endtask
   
   
